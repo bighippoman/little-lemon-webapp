@@ -1,12 +1,15 @@
 // src/components/Main.js
 function Main() {
-    return (
-      <main id="main-content">
-        {/* Reservation form or other routed pages will go here */}
+  return (
+    <main className="site-main" id="main-content">
+      <section className="reservation-section">
         <h1>Reserve a Table</h1>
-        {/* Add your form component once you build it */}
-      </main>
-    );
-  }
-  
-  export default Main;
+        <p>Choose your date, time, and party size and we’ll have a table ready for you.</p>
+      </section>
+
+      {/* Reservation form component will go here */}
+    </main>
+  );
+}
+
+export default Main;

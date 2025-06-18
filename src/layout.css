@@ -12,22 +12,15 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-/* --------  Grid skeleton  -------- */
+/* --------  Grid skeleton (modified for full-width)  -------- */
 #root { /* CRA & Vite both inject the app into #root */
   min-height: 100vh;
-  display: grid;
-
-  /* Mobile-first: single column */
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-
-  grid-template-rows: auto auto 1fr auto;
+  /* display: grid; -- Removed to allow App.css full-width control */
+  /* grid-template-areas and grid-template-rows removed */
 }
 
-/* Tablet & up: two‑column layout */
+/* Tablet & up: two‑column layout (Removed as it constrained width) */
+/* 
 @media (min-width: 768px) {
   #root {
     grid-template-areas:
@@ -35,15 +28,18 @@ body {
       "nav    main"
       "footer footer";
 
-    grid-template-columns: 260px 1fr; /* sidebar + content */
+    grid-template-columns: 260px 1fr; 
   }
 }
+*/
 
-/* --------  Area assignments  -------- */
+/* --------  Area assignments (No longer needed due to grid removal from #root)  -------- */
+/* 
 .site-header { grid-area: header; }
 .site-nav    { grid-area: nav;    }
 .site-main   { grid-area: main;   }
 .site-footer { grid-area: footer; }
+*/
 
 /* --------  Quick Flex helpers  -------- */
 .site-header,
