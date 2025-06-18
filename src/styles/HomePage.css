@@ -1,0 +1,379 @@
+/* HomePage Specific Styles - Modern Responsive */
+
+/* Featured Section */
+.featured-section {
+  padding: var(--spacing-xxxl) 0;
+  background: var(--cream);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xxxl);
+}
+
+.section-header h2 {
+  margin: 0;
+  color: var(--primary-green);
+}
+
+.view-menu-link {
+  background: var(--primary-yellow);
+  color: var(--black);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.view-menu-link:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.featured-dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.dish-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.dish-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.dish-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.dish-card:hover .dish-image img {
+  transform: scale(1.05);
+}
+
+.dish-content {
+  padding: var(--spacing-lg);
+}
+
+.dish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.dish-name {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-green);
+}
+
+.dish-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--secondary-orange);
+}
+
+.dish-description {
+  color: var(--gray);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.dish-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.order-delivery-btn {
+  background: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.order-delivery-btn:hover {
+  background: #3d4f4a;
+  transform: translateY(-1px);
+}
+
+.dietary-info {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.dietary-tag {
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dietary-tag--vegetarian {
+  background: #e8f5e8;
+  color: #2d5016;
+}
+
+.dietary-tag--vegan {
+  background: #f0f8e8;
+  color: #2d4016;
+}
+
+.dietary-tag--gluten-free {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* About Preview Section */
+.about-preview {
+  padding: var(--spacing-xxxl) 0;
+  background: var(--white);
+}
+
+.about-preview .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxxl);
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-content h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.8;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.7;
+}
+
+.learn-more-btn {
+  background: var(--primary-yellow);
+  color: var(--black);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  display: inline-block;
+  box-shadow: var(--shadow-sm);
+}
+
+.learn-more-btn:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-images {
+  position: relative;
+  height: 400px;
+}
+
+.about-img {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+
+.about-img--front {
+  width: 60%;
+  height: 70%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.about-img--back {
+  width: 60%;
+  height: 70%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: var(--spacing-xxxl) 0;
+  background: var(--cream);
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xxxl);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.rating {
+  margin-bottom: var(--spacing-lg);
+}
+
+.stars {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.rating-text {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  justify-content: center;
+}
+
+.reviewer-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-yellow);
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.review-text {
+  font-style: italic;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .featured-dishes {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 968px) {
+  .about-preview .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+  
+  .about-images {
+    height: 300px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-dishes {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .dish-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-sm);
+  }
+  
+  .dietary-info {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img--front,
+  .about-img--back {
+    width: 80%;
+    height: 60%;
+  }
+  
+  .testimonial-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .reviewer-info {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
