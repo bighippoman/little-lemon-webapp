@@ -1,10 +1,17 @@
-import './App.css';
+// src/App.js
+import Header from './components/Header';
+import Nav     from './components/Nav';
+import Main    from './components/Main';
+import Footer  from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Homepage</h1>
-    </div>
+    <> {/* React fragment instead of a non-semantic <div> */}
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
